@@ -61,8 +61,4 @@ def get_shop_list_by_dishes(dishes, person_count):
 get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2)
 
 
-################______ TASK №3 ______################
-
-
-
 
