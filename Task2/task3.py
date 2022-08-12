@@ -23,8 +23,6 @@ size_second = len(second_txt)
 size_third = len(third_txt)
 
 
-
-
 if size_first <= size_second and size_first <= size_third:
     with open('result.txt', 'a', encoding='utf-8') as f:
         f.write(text_1 + '\n' + str(size_first) + '\n')
@@ -79,7 +77,3 @@ else:
         f.close()
 
 
-
-print(len(first_txt))
-print(len(second_txt))
-print(len(third_txt))
