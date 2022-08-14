@@ -32,7 +32,7 @@ sorted_size_dic = dict(sorted(size_text.items()))
 
 with open('result.txt', 'a', encoding='utf-8') as f:
     for key, value in sorted_size_dic.items():
-        f.write(str(key) + '\n' + value + '\n')
+        f.write(value + '\n' + str(key) + '\n')
         for k, value in dict_text.items():
             if k == key:
                 for item in value:
