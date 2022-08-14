@@ -1,5 +1,18 @@
+import os
 
-all_files = ['1.txt', '2.txt', '3.txt']
+tree = os.walk('text_to_find')
+all_files = []
+
+for files in tree:
+    for items in files:
+        for inside_items in items:
+            if inside_items.endswith('.txt'):
+                all_files .append(inside_items)
+
+print(all_files)
+
+
+
 dict_text = {}
 size_text = {}
 all_text = []
