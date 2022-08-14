@@ -21,7 +21,8 @@ size_text = {}
 all_text = []
 
 for item in all_files:
-    with open(item, encoding='utf-8') as f:
+    # обязательно ставим путь до файла, т.к. код программа не в папке сейчас находится (в папке где файлы)
+    with open(f'text_to_find/{item}', encoding='utf-8') as f:
         first_txt = f.read().split('\n')
         size = len(first_txt)
         all_text.append(item)
