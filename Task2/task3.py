@@ -12,10 +12,6 @@ for files in tree:
             if inside_items.endswith('.txt'):
                 all_files .append(inside_items)
 
-print(all_files)
-
-
-
 dict_text = {}
 size_text = {}
 all_text = []
@@ -29,13 +25,11 @@ for item in all_files:
         dict_text[size] = first_txt
         size_text[size] = item
 
-sorted_size_dic = dict(sorted(size_text.items()))
 
 with open('result.txt', 'a', encoding='utf-8') as f:
-    for key, value in sorted_size_dic.items():
+    for key, value in sorted(size_text.items()):
         f.write(value + '\n' + str(key) + '\n')
         for k, value in dict_text.items():
             if k == key:
                 for item in value:
                     f.write(item + '\n')
-    f.close()
