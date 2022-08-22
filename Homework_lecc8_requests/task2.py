@@ -9,6 +9,8 @@ class YaUploader:
     def __init__(self, token: str):
         self.token = yandex_acc_token
 
+
+# Добавим возможность создавать папку в главной директории Yandex.Disk
     def create_folder(self, name_path):
         """Создание папки. \n path: Путь к создаваемой папке."""
         response = requests.put(f'{URL1}?path={name_path}', headers=headers)
@@ -35,7 +37,6 @@ class YaUploader:
         response = requests.get(files_url, headers=headers)
         pprint(response)
         return response.json()
-
 
 
     def _get_upload_link(self, disk_file_path):
