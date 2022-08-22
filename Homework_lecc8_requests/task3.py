@@ -14,4 +14,4 @@ for x in result['items']:
     count += 1
     dict_of_questions[count] = x['link']
 
-print(f'всего вопросов по Python - {count}, все ссылки можно посмотрет в словаре')
+print(f'всего вопросов по Python - {count}, за последние дни, все ссылки можно посмотреть в словаре')
