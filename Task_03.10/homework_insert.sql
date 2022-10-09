@@ -70,6 +70,9 @@ values (5, 7)
 insert into genre_musician (genre_id, musician_id)
 values (1, 5)
 
+insert into genre_musician (genre_id, musician_id)
+values (5, 2)
+
 
 -- 8 albums
 
@@ -141,63 +144,71 @@ values (1, 8)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Takes', '00:02:30', 3)
+values ('Takes', 120, 3)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Hello World', '00:02:12', 3)
+values ('Hello World', 123, 3)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Jimmy T', '00:01:55', 1)
+values ('Jimmy T', 69, 1)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Man in Black', '00:02:34', 1)
+values ('Man in Black', 240, 1)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Key to you heart', '00:01:23', 2)
+values ('Key to you heart', 240, 2)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Stay at home', '00:01:55', 2)
+values ('Stay at home', 34, 2)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Winter comming', '00:01:55', 4)
+values ('Winter comming', 34, 4)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Some news', '00:02:34', 4)
+values ('Some news', 345, 4)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Fifty one', '00:01:34', 5)
+values ('Fifty one', 156, 5)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Serials', '00:02:32', 5)
+values ('Serials', 235, 5)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Don"t go', '00:02:44', 6)
+values ('Don"t go', 141, 6)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('My family time', '00:02:12', 6)
+values ('My family time', 149, 6)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Be happy', '00:01:36', 7)
+values ('Be happy', 165, 7)
 
 
 insert into songs (name_song, size_time, album_id)
-values ('Underwatter', '00:01:54', 8)
+values ('Underwatter', 173, 8)
 
 insert into songs (name_song, size_time, album_id)
-values ('Hey hop-p-ppi po', '00:01:44', 8)
+values ('Hey hop-p-ppi po', 135, 8)
 
+insert into songs (name_song, size_time, album_id)
+values ('Harm to be done', 183, 7)
+
+insert into songs (name_song, size_time, album_id)
+values ('Biggest song', 167, 3)
+
+insert into songs (name_song, size_time, album_id)
+values ('Slippy to', 173, 6)
 
 
 

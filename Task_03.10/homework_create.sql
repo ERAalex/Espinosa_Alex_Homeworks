@@ -49,8 +49,8 @@ CREATE TABLE IF NOT EXISTS Musician_Album (
 
 CREATE TABLE IF NOT EXISTS Songs (
 	id serial PRIMARY KEY,
-	name_song varchar(40) NOT NULL,
-	size_time time NOT NULL,
+	name_song varchar(80) NOT NULL UNIQUE,
+	size_time integer NOT NULL,
 	album_id int REFERENCES Albums (id)
 );
 
