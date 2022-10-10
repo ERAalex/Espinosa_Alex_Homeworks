@@ -77,3 +77,10 @@ where s.size_time =(select min(s.size_time) from songs s);
 
 
 -- 9  -- название альбомов, содержащих наименьшее количество треков.
+
+select b.name_album from
+(select c.album_id from (select t.album_id, count(t.name_song) from songs t group by t.album_id) c
+where c.count = (select min(s.count) from (select t.album_id, count(t.name_song) from songs t group by t.album_id) s)) a
+left join albums b on a.album_id = b.id;
+
+
