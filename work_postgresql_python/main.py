@@ -1,6 +1,6 @@
 import psycopg2
 
-conn = psycopg2.connect(database="python_netology", user="alex", password="nazca007")
+conn = psycopg2.connect(database="YOUR_name", user="PUT_SOMETHING", password="PUT_SOMETHING")
 cur = conn.cursor()
 
 
