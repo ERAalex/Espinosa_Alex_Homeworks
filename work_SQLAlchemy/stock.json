@@ -1,0 +1,13 @@
+[
+  {"id": 1, "id_shop": 1, "id_book": 1, "count": 34},
+  {"id": 2, "id_shop": 1, "id_book": 2, "count": 30},
+  {"id": 3, "id_shop": 1, "id_book": 3, "count": 0},
+  {"id": 4, "id_shop": 2, "id_book": 5, "count": 40},
+  {"id": 5, "id_shop": 2, "id_book": 6, "count": 50},
+  {"id": 6, "id_shop": 3, "id_book": 4, "count": 10},
+  {"id": 7, "id_shop": 3, "id_book": 6, "count": 10},
+  {"id": 8, "id_shop": 2, "id_book": 1, "count": 10},
+  {"id": 9, "id_shop": 3, "id_book": 1, "count": 10}
+
+
+]

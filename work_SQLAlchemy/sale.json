@@ -1,0 +1,8 @@
+[
+  {"id": 1, "price": "50.05", "date_sale": "2018-10-25T09:45:24.552Z", "count": 16, "id_stock": 1},
+  {"id": 2, "price": "50.05", "date_sale": "2018-10-25T09:51:04.113Z", "count": 10, "id_stock": 3},
+  {"id": 3, "price": "10.50", "date_sale": "2018-10-25T09:52:22.194Z", "count": 9, "id_stock": 6},
+  {"id": 4, "price": "16.00", "date_sale": "2018-10-25T10:59:56.230Z", "count": 5, "id_stock": 5},
+  {"id": 5, "price": "16.00", "date_sale": "2018-10-25T10:59:56.230Z", "count": 5, "id_stock": 9},
+  {"id": 6, "price": "16.00", "date_sale": "2018-10-25T10:59:56.230Z", "count": 1, "id_stock": 4}
+]
