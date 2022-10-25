@@ -10,7 +10,7 @@ login = os.getenv('login_db')
 passw = os.getenv('passw_db')
 db_name = os.getenv('db_name_a')
 
-DSN = f'postgresql://{login}:{passw}@localhost:5432/{db_name}'
+DSN = f'postgresql://alex:nazca007@localhost:5432/netolog_sqlalchemy_homework'
 engine = sqlalchemy.create_engine(DSN)
 
 # for connection and woking we need 'sessions' - it's like using cursor
