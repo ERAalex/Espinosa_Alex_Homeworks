@@ -7,9 +7,9 @@ with open("phonebook_raw.csv", encoding='utf-8',) as f:
   contacts_list = list(rows)
 
 dict_names = {}
-dict_dubl_names = {}
 
 for x in contacts_list:
+  dict_dubl_names = {}
   full_name = x[0] + ' ' + x[1] + ' ' + x[2]
   full_name_split = full_name.split(' ')
   x[0] = full_name_split[0]  # x[0] - surname,  text_1[0] - surname
@@ -22,35 +22,34 @@ for x in contacts_list:
 
   x[5] = result
   surname = x[0]
-  if surname not in dict_names.keys():
-    dict_names[surname] = x[1:]
+  name = x[1]
+  # Записываем как ключ и фамилию и имя, т.к. могут быть 1 фамильцы, а так точно исключим наличие родственников:
+  keys = surname + ' ' + name
+
+  if keys not in dict_names.keys():
+    dict_names[keys] = x[2:]
   else:
-    dict_dubl_names[surname] = x[1:]
+    dict_dubl_names[keys] = x[2:]
 
+    for key, value in dict_names.items():
+      for key_t, value_t in dict_dubl_names.items():
+        if key == key_t:
+          if len(value_t[2]) > len(value[2]):
+            value[2] = value_t[2]
+          if len(value_t[3]) > len(value[3]):
+            value[3] = value_t[3]
+          if len(value_t[4]) > len(value[4]):
+            value[4] = value_t[4]
 
-
-for key, value in dict_names.items():
-  for key_t, value_t in dict_dubl_names.items():
-    if key == key_t and value[0] == value_t[0]:
-      if len(value_t[0]) > len(value[0]):
-        value[0] = value_t[0]
-      if len(value_t[1]) > len(value[1]):
-        value[1] = value_t[1]
-      if len(value_t[2]) > len(value[2]):
-        value[2] = value_t[2]
-      if len(value_t[3]) > len(value[3]):
-        value[3] = value_t[3]
-      if len(value_t[4]) > len(value[4]):
-        value[4] = value_t[4]
-      if len(value_t[5]) > len(value[5]):
-        value[5] = value_t[5]
 
 done_list = []
 list_first = []
 
 for key, value in dict_names.items():
   list_first = []
-  list_first.append(key)
+  key_f = key.split(" ")
+  list_first.append(key_f[0])
+  list_first.append(key_f[1])
   for values in value:
     list_first.append(values)
   done_list.append(list_first)
@@ -60,13 +59,3 @@ with open("phonebook.csv", "w", encoding='utf-8') as f:
   datawriter = csv.writer(f, delimiter=',')
   datawriter.writerows(done_list)
 
-
-
-
-# информация для себя по данным
-# value[0] - name
-# value[1] - patr
-# value[2] - organiz
-# value[3] - position
-# value[4] - phone
-# value[5] - email
