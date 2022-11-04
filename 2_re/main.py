@@ -20,6 +20,7 @@ for x in contacts_list:
   pattern = "(\+7|8)\s?\(?(\d{3})\)?\s?\-?(\d{3})\s?\-?(\d{2})\s?\-?(\d{2})\s?\(?(\доб.)?(\s+)?(\d+)?"
   result = re.sub(pattern, r"+7(\2)\3-\4-\5\7\6\8", text)
 
+
   x[5] = result
   surname = x[0]
   name = x[1]
