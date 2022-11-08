@@ -1,0 +1,18 @@
+the function used at: 2022-11-08 23:06:13.642081 
+name of function is: summator
+*args are: (2, 2)
+*kwargs are: {}
+result of function is: 4 
+ 'Конец записи' 
+the function used at: 2022-11-08 23:06:13.642081 
+name of function is: div
+*args are: (4, 2)
+*kwargs are: {}
+result of function is: 2.0 
+ 'Конец записи' 
+the function used at: 2022-11-08 23:06:13.642081 
+name of function is: summator
+*args are: (4.3,)
+*kwargs are: {'b': 2.2}
+result of function is: 6.5 
+ 'Конец записи' 

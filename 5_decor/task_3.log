@@ -1,0 +1,6 @@
+the function used at: 2022-11-08 23:17:20.782674 
+name of function is: list_check
+*args are: ([['a', 'b', 'c'], ['d', 'e', 'f', 'h', False], [1, 2, None]],)
+*kwargs are: {}
+result of function is: ['a', 'b', 'c', 'd', 'e', 'f', 'h', False, 1, 2, None] 
+ 'Конец записи' 
