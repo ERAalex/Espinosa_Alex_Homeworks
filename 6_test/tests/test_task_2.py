@@ -1,9 +1,9 @@
-import json
+import os
 import unittest
 from task_2 import create_folder
 
 
-token = 'y0_AgAAAABU48rYAAhViQAAAADMh1IKp3b8VZPgQ_C7kBP8muK0JUadra8'
+token = os.getenv('token')
 fail_token = 'asdasHelloWorldsdfsdfd'
 
 class TestYandex(unittest.TestCase):

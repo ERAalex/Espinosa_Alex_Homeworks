@@ -1,6 +1,5 @@
 import unittest
-from task_3 import enter_yandex, find_input_field_put_login, find_button_ok_1, find_input_field_put_password
-from task_3 import find_button_ok_2
+from task_3 import enter_yandex, find_input_field_put_login
 
 import os
 
@@ -16,10 +15,6 @@ path_file_chromedriver = os.getenv('path_file_chromedriver')
 good_xpath_inp_1 = '//*[@id="passp-field-login"]'
 
 good_xpath_butt_1 = '//*[@id="passp:sign-in"]'
-
-good_xpath_inp_2 = '//*[@id="passp-field-passwd"]'
-
-good_xpath_butt_2 = '//*[@id="passp:sign-in"]'
 
 
 

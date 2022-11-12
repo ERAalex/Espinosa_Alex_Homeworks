@@ -1,10 +1,10 @@
 import requests
 from pprint import pprint
-import json
+import os
 
 
+token = os.getenv('token')
 
-token = 'y0_AgAAAABU48rYAAhViQAAAADMh1IKp3b8VZPgQ_C7kBP8muK0JUadra8'
 
 def create_folder(token_g, fold_name):
     URL = 'https://cloud-api.yandex.net/v1/disk/resources'

@@ -1,6 +1,3 @@
-from pprint import pprint
-import pytest
-
 
 geo_logs = [
     {'visit1': ['Москва', 'Россия']},
