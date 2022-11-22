@@ -3,4 +3,4 @@ name of function is: list_check
 *args are: ([['a', 'b', 'c'], ['d', 'e', 'f', 'h', False], [1, 2, None]],)
 *kwargs are: {}
 result of function is: ['a', 'b', 'c', 'd', 'e', 'f', 'h', False, 1, 2, None] 
- 'Конец записи'  #
+ 'Конец записи'  ##
